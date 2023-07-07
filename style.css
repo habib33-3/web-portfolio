@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 /* Common Style */
 
 body {
@@ -58,12 +63,38 @@ nav a {
 
 .header {
   background-color: #fff8f3;
+  background-image: url("images/header_bg.png");
+  background-repeat: no-repeat;
+  background-position: bottom right;
 }
 
 .banner {
-  padding: 30px 30px 30px 150px;
+  padding: 30px 30px 0px 150px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+}
+
+.banner-content{
+    max-width: 500px;
+}
+
+.banner-greeting {
+  font-size: 45px;
+  color: #474747;
+  margin-bottom: 0;
+}
+
+.banner-title {
+  font-size: 85px;
+  font-style: normal;
+  font-weight: 700;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.banner-text{
+    margin-bottom: 30px;
 }
 
 .banner-img {
