@@ -59,6 +59,20 @@ nav a {
   color: #474747;
 }
 
+.section-title {
+  color: #181818;
+  text-align: center;
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.section-description {
+  color: #757575;
+  text-align: center;
+  font-size: 18px;
+  
+}
+
 /* header */
 
 .header {
@@ -75,8 +89,8 @@ nav a {
   justify-content: space-between;
 }
 
-.banner-content{
-    max-width: 500px;
+.banner-content {
+  max-width: 500px;
 }
 
 .banner-greeting {
@@ -93,11 +107,41 @@ nav a {
   margin-bottom: 20px;
 }
 
-.banner-text{
-    margin-bottom: 30px;
+.banner-text {
+  margin-bottom: 30px;
 }
 
 .banner-img {
   width: 500px;
   height: 600px;
+}
+
+/* Main */
+
+main {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+/* about */
+
+.about {
+  padding: 130px;
+  border-radius: 10px;
+  background: #fff8f3;
+  margin: 130px 0;
+}
+
+.about-info-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 25px;
+}
+
+.about-info {
+  text-align: center;
+}
+
+.info-description{
+    font-weight: bold;
 }
