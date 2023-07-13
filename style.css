@@ -6,7 +6,7 @@
 /* Common Style */
 
 body {
-  font-family: "Lato", "sans-serif";
+  font-family: "Lato", sans-serif;
   font-family: "Open Sans", sans-serif;
 }
 
@@ -80,9 +80,9 @@ main section {
 
 .header {
   background-color: #fff8f3;
-  background-image: url("images/header_bg.png");
+  background-image: url("images/header_bg.png"), url("images/developer.png");
   background-repeat: no-repeat;
-  background-position: bottom right;
+  background-position: bottom right, top left;
 }
 
 .banner {
@@ -139,6 +139,7 @@ main {
   display: flex;
   justify-content: space-around;
   margin-top: 25px;
+  gap: 20px;
 }
 
 .about-info {
@@ -160,7 +161,7 @@ main {
 
 .skills {
   padding: 30px;
-  margin: 20px;
+  /* margin: 20px; */
   border-radius: 5px;
   background: #fff;
   box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.06);
@@ -220,7 +221,8 @@ footer {
 }
 
 .contact input[type="text"],
-input[type="email"], textarea {
+input[type="email"],
+textarea {
   display: block;
   margin-bottom: 25px;
   padding: 18px 35px;
@@ -231,10 +233,74 @@ input[type="email"], textarea {
   width: 100%;
 }
 
-.social-links{
-    margin-top: 25px;
+.social-links {
+  margin-top: 25px;
 }
 
-.social-links a{
-    margin-right: 25px;
+.social-links a {
+  margin-right: 25px;
 }
+
+.hide {
+  display: none;
+}
+
+/* Responsive Style */
+
+/* Mobile Devices */
+
+@media screen and (max-width: 576px) {
+  .skills-container,
+  .resume-container,
+  footer,
+  .about-info-container,
+  nav > ul,
+  .banner,
+  nav {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .banner .banner-img {
+    width: 100%;
+  }
+
+  #what-i-do-description {
+    padding: 20px;
+  }
+
+  .what-i-do_section {
+    padding: 20px;
+  }
+
+  .resume-container {
+    margin: 20px;
+    text-align: center;
+  }
+
+  footer,
+  .about {
+    padding: 10px;
+  }
+
+  .footer-column {
+    width: 100%;
+  }
+
+  .contact input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 80%;
+  }
+
+  .header{
+    background-image: none;
+  }
+}
+
+/* @media screen and (min-width: 576px) and (max-width: 960px) {
+  .skills-container,
+  .resume-container {
+    flex-direction: column;
+  }
+} */
